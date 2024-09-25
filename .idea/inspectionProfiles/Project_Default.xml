@@ -1,0 +1,50 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="36">
+            <item index="0" class="java.lang.String" itemvalue="tqdm" />
+            <item index="1" class="java.lang.String" itemvalue="tiktoken" />
+            <item index="2" class="java.lang.String" itemvalue="numba" />
+            <item index="3" class="java.lang.String" itemvalue="more-itertools" />
+            <item index="4" class="java.lang.String" itemvalue="torch" />
+            <item index="5" class="java.lang.String" itemvalue="numpy" />
+            <item index="6" class="java.lang.String" itemvalue="soundcard" />
+            <item index="7" class="java.lang.String" itemvalue="jiwer" />
+            <item index="8" class="java.lang.String" itemvalue="dataclasses" />
+            <item index="9" class="java.lang.String" itemvalue="ctranslate2" />
+            <item index="10" class="java.lang.String" itemvalue="datasets" />
+            <item index="11" class="java.lang.String" itemvalue="faster-whisper" />
+            <item index="12" class="java.lang.String" itemvalue="bitsandbytes" />
+            <item index="13" class="java.lang.String" itemvalue="fastapi" />
+            <item index="14" class="java.lang.String" itemvalue="soundfile" />
+            <item index="15" class="java.lang.String" itemvalue="zhconv" />
+            <item index="16" class="java.lang.String" itemvalue="starlette" />
+            <item index="17" class="java.lang.String" itemvalue="peft" />
+            <item index="18" class="java.lang.String" itemvalue="librosa" />
+            <item index="19" class="java.lang.String" itemvalue="tensorboardX" />
+            <item index="20" class="java.lang.String" itemvalue="accelerate" />
+            <item index="21" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="22" class="java.lang.String" itemvalue="evaluate" />
+            <item index="23" class="java.lang.String" itemvalue="nemo_toolkit" />
+            <item index="24" class="java.lang.String" itemvalue="wget" />
+            <item index="25" class="java.lang.String" itemvalue="demucs" />
+            <item index="26" class="java.lang.String" itemvalue="deepmultilingualpunctuation" />
+            <item index="27" class="java.lang.String" itemvalue="whisperX" />
+            <item index="28" class="java.lang.String" itemvalue="transformers" />
+            <item index="29" class="java.lang.String" itemvalue="setuptools" />
+            <item index="30" class="java.lang.String" itemvalue="torchaudio" />
+            <item index="31" class="java.lang.String" itemvalue="onnxruntime" />
+            <item index="32" class="java.lang.String" itemvalue="ffmpeg-python" />
+            <item index="33" class="java.lang.String" itemvalue="openai-whisper" />
+            <item index="34" class="java.lang.String" itemvalue="websocket-client" />
+            <item index="35" class="java.lang.String" itemvalue="kaldialign" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
