@@ -7,3 +7,5 @@ pip install -r requirements
 wget https://www.modelscope.cn/models/dengcunqin/speech_mossformer2_noise_reduction_16k/resolve/master/simple_model.onnx
 ```
 
+Gradio-generated interface display：
+![image](https://github.com/xinliu9451/awesome-denoiser/blob/main/example_data/demo.png)
