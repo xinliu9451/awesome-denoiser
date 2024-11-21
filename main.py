@@ -7,6 +7,9 @@ from resemble_enhance_denoise import resemble_enhance_denoise
 from frcrn_denoise import frcrn_denoise
 from mossformer2_denoise import mossformer2_denoise
 from deepfilternet_denoise import deepfilternet_denoise
+from mdxnet_denoise import mdxnet_denoise
+from mpsenet_denoise import mpsenet_denoise
+from dtln_denoise import dtln_denoise
 
 
 
@@ -16,7 +19,7 @@ html_content = """
     <p style="font-size: 18px;margin-left: 20px;">这是一个音频降噪的Demo。</p>
     <h2 style="font-size: 22px;margin-left: 0px;">Configuration Introduction</h2>
     <p style="font-size: 18px;margin-left: 20px;">Capability：选择场景，这里可以选择语种识别降噪和语音翻译降噪，前者一个输入一个输出，后者两个输入一个输出。</p>
-    <p style="font-size: 18px;margin-left: 20px;">Model：选择降噪模型，目前提供7种常用的降噪模型。</p>
+    <p style="font-size: 18px;margin-left: 20px;">Model：选择降噪模型，目前提供 11 种常用的降噪模型。</p>
     <p style="font-size: 18px;margin-left: 20px;">dB：检测静音的阈值，低于这个值会被认为是静音。一般dB值越大过滤掉的音频片段会越多，建议设置-40~-20之间。</p>
     <p style="font-size: 18px;margin-left: 20px;">Min_Silence_Duration：删除静音片段的最小间隔，单位是秒。建议设置为0.1，这样会删除连续静音超过0.1秒的音频片段。</p>
     <h2 style="font-size: 22px;margin-left: 0px;">Usage</h2>
@@ -57,6 +60,12 @@ def model_inference(audio_input1, audio_input2, capability_inputs, model_inputs,
         return rnnoiser_denoise(audio_input1, audio_input2, dB, min_silence_duration)
     elif model_inputs == "deepfilternet":
         return deepfilternet_denoise(audio_input1, audio_input2, dB, min_silence_duration)
+    elif model_inputs == "mdxnet":
+        return mdxnet_denoise(audio_input1, audio_input2, dB, min_silence_duration)
+    elif model_inputs == "mpsenet":
+        return mpsenet_denoise(audio_input1, audio_input2, dB, min_silence_duration)
+    elif model_inputs == "dtln":
+        return dtln_denoise(audio_input1, audio_input2, dB, min_silence_duration)
 
 def launch():
     with gr.Blocks(theme=gr.themes.Soft()) as demo:
@@ -65,7 +74,7 @@ def launch():
             with gr.Column():
                 with gr.Accordion("Configuration"):
                     capability_inputs = gr.Dropdown(choices=["language_recognition_denoiser", "speech_translation_denoiser"], value="language_recognition_denoiser", label="Capability")
-                    model_inputs = gr.Dropdown(choices=["denoiser_dns64", "denoiser_dns48", "noisereduce","resemble-enhance","frcrn-ali","mossformer2-ali","rnnoiser",'deepfilternet'], value="denoiser_dns64", label="Model")
+                    model_inputs = gr.Dropdown(choices=["dtln", "mdxnet", "mpsenet", "denoiser_dns64", "denoiser_dns48", "noisereduce","resemble-enhance","frcrn-ali","mossformer2-ali","rnnoiser",'deepfilternet'], value="dtln", label="Model")
                     dB = gr.Slider(minimum=-80, maximum=0, step=1, label="dB", value=-20)
                     min_silence_duration = gr.Slider(minimum=0, maximum=1, step=0.01, label="Min_Silence_Duration", value=0.1)
                 with gr.Row():
