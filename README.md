@@ -25,3 +25,6 @@ In my project, there are two modes of audio denoising. One mode takes two audio 
 5. https://www.modelscope.cn/models/iic/speech_frcrn_ans_cirm_16k
 6. https://www.modelscope.cn/models/dengcunqin/speech_mossformer2_noise_reduction_16k
 7. https://github.com/yuyun2000/SpeechDenoiser
+8. https://github.com/breizhn/DTLN
+9. https://github.com/JacobLinCool/MPSENet
+10. https://github.com/seanghay/uvr-mdx-infer
