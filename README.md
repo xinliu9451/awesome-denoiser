@@ -1,6 +1,10 @@
 # awesome-denoiser
 This is a repository that collects common audio noise reduction models, using Gradio to demonstrate the use of each model, which is very friendly for beginners.
 
+## Recommend
+From my own experience with it, the mdxnet model works best, the dtln model balances effectiveness and efficiency, and the gtcrn works well. 
+By the way, this repository will continue to update and add some new speech enhancement models, please give me a STAR if you find it helpful.
+
 ## Usage
 All you need to do is configure the environment and download the required model. You can use the following command to set up the environment and download the Mossformer2, DeepFilterNet2 model, then place the downloaded model in the example_data directory.
 ```
