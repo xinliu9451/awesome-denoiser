@@ -10,6 +10,7 @@ wget https://github.com/yuyun2000/SpeechDenoiser/blob/main/48k/denoiser_model.on
 wget https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/UVR-MDX-NET-Inst_HQ_1.onnx
 wget https://github.com/breizhn/DTLN/raw/refs/heads/master/pretrained_model/model_1.tflite
 wget https://github.com/breizhn/DTLN/raw/refs/heads/master/pretrained_model/model_2.tflite
+wget https://github.com/Xiaobin-Rong/gtcrn/blob/main/stream/onnx_models/gtcrn.onnx
 ```
 
 In my project, there are two modes of audio denoising. One mode takes two audio inputs and produces one audio output. The principle is to detect silent sections based on one audio and then remove the corresponding silent sections from the other audio. This is a specific application scenario, so you don't need to consider it. You just need to focus on the scenario where one audio input results in one audio output, as this is the more generalized application scenario.
@@ -28,3 +29,4 @@ In my project, there are two modes of audio denoising. One mode takes two audio 
 8. https://github.com/breizhn/DTLN
 9. https://github.com/JacobLinCool/MPSENet
 10. https://github.com/seanghay/uvr-mdx-infer
+11. https://github.com/Xiaobin-Rong/gtcrn
