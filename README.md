@@ -7,7 +7,8 @@ From my own experience with it, the mdxnet model works best, the dtln model bala
 By the way, this repository will continue to update and add some new speech enhancement models, please give me a STAR if you find it helpful.
 
 ## Usage
-This is a project for demonstrating the effect of multiple noise reduction models. If you just want to use a particular model for noise reduction, you can use the scripts in the infer directory. Otherwise, you need to do is configure the environment and download the required model. You can use the following command to set up the environment and download the Mossformer2, DeepFilterNet2 model, then place the downloaded model in the example_data directory.
+This is a project for demonstrating the effect of multiple noise reduction models. If you just want to use a particular model for noise reduction, you can use the scripts in the infer directory.
+You need to do is configure the environment and download the required model. You can use the following command to set up the environment and download the Mossformer2, DeepFilterNet2 model, then place the downloaded model in the example_data directory.
 ```
 pip install -r requirements
 wget https://www.modelscope.cn/models/dengcunqin/speech_mossformer2_noise_reduction_16k/resolve/master/simple_model.onnx
